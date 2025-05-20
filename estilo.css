@@ -1,0 +1,55 @@
+/* Fondo general */
+.bg-custom {
+  background-color: #7edd72;
+  color: #eb23a8;
+}
+
+/* Logo de la empresa */
+.logo {
+  max-width: 120px;
+  height: auto;
+}
+
+/* Sello PAGADO superpuesto e inclinado */
+.stamp {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: rgb(228, 7, 7);
+  font-size: 3rem;
+  transform: rotate(-20deg);
+  z-index: 1050;
+  opacity: 0.7;
+}
+
+/* Encabezado de la tabla de productos */
+.productos thead {
+  background-color: #f100a1; 
+  color: #000000; 
+}
+
+/* Filas */
+.productos tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.productos tbody tr:nth-child(even) {
+  background-color: #ffe0f0; 
+}
+
+/* Alineación centrada */
+.table th,
+.table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Datos del cliente*/
+table.cliente th {
+  background-color: #000000;
+  color: white;
+  width: 40%;
+}
+table.cliente td {
+  background-color: #df29c0;
+  color: white;
+}
