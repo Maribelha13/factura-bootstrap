@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Factura Proforma</title>
 
-  <!-- Bootstrap CSS nos permite -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   
   <!-- Hoja de estilo personalizada -->
@@ -13,13 +13,16 @@
 </head>
 <body class="bg-custom text-dark">
 
-  <!-- Contenedor principal -->
+  <!-- Container: Contenedor principal (ancho fijo con margenes) -->
   <div class="container my-5">
-    <!-- Sello PAGADO -->
+    
+    <!-- Z-index: Sello superpuesto (PAGADO) -->
     <div class="stamp fw-bold">PAGADO</div>
 
     <!-- 1. Datos de la Empresa -->
+    <!-- Grid: estructura en fila y columnas --> 
     <div class="row mb-4 align-items-center">
+      <!-- .col-md-8: columna de 8 partes en md hacia arriba -->
       <div class="col-md-8">
         <h2 class="fw-bold">New Me Beauty Salon</h2>
         <p class="mb-0">Dirección: Av. Padre Luis Vaccari, Quito</p>
@@ -27,7 +30,11 @@
         <p class="mb-0">Teléfono: 0987127882</p>
         <p>Email: contacto@newme.com</p>
       </div>
+
+      <!-- .col-md-4: columna para logo y datos -->
       <div class="col-md-4 text-end">
+
+        <!-- Z-index: logo encima -->
         <img src="logo.jpg" alt="Logo" class="logo" />
         <p class="mt-2">Fecha: 13/05/2025</p>
         <p>N° Factura: 001-001-000123</p>
@@ -35,9 +42,11 @@
     </div>
 
     <!-- 2. Datos del Cliente  -->
+    <!-- Grid: sección datos cliente --> 
     <div class="row mb-4">
       <div class="col-md-6">
         <h5 class="fw-bold">Datos del Cliente</h5>
+         <!-- Utilities: tablas con estilos -->
         <table class="table table-bordered cliente">
           <tbody>
             <tr><th>Nombre:</th><td>Maribel Amaguaña</td></tr>
@@ -50,9 +59,11 @@
     </div>
 
    <!-- 3. Detalle de Productos -->
+    <!-- Grid: detalle de productos --> 
     <div class="row mb-4">
       <div class="col">
         <h5 class="fw-bold">Detalle de Productos</h5>
+        <!-- Tabla responsive para columnas pequeñas -->
         <div class="table-responsive">
           <table class="table table-bordered productos">
             <thead>
@@ -66,7 +77,7 @@
             </thead>
             <tbody>
 
-          <!-- Aquí van los productos -->
+          <!-- Aquí van las filas de los productos -->
 
               <tr><td>001</td><td>Shampoo Profesional</td><td>2</td><td>$5.00</td><td>$10.00</td></tr>
               <tr><td>002</td><td>Acondicionador Herbal</td><td>1</td><td>$4.50</td><td>$4.50</td></tr>
@@ -80,6 +91,7 @@
     </div>
 
     <!-- 4. Totales -->
+    <!-- Grid: totales al final -->
     <div class="row mb-4 justify-content-end">
       <div class="col-md-4">
         <table class="table">
@@ -91,6 +103,7 @@
     </div>
 
     <!-- 5. Observaciones -->
+    <!-- Utilities: observaciones finales -->
     <div class="row">
       <div class="col">
         <h6>Observaciones:</h6>

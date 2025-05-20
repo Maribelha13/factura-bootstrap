@@ -1,16 +1,16 @@
-/* Fondo general */
+/* Fondo general - Utilities */
 .bg-custom {
   background-color: #7edd72;
   color: #eb23a8;
 }
 
-/* Logo de la empresa */
+/* Logo de la empresa con tamaño fijo - Utilities */
 .logo {
   max-width: 120px;
   height: auto;
 }
 
-/* Sello PAGADO superpuesto e inclinado */
+/* Sello PAGADO superpuesto e inclinado - Uso de z-index*/
 .stamp {
   position: absolute;
   top: 20px;
@@ -22,13 +22,13 @@
   opacity: 0.7;
 }
 
-/* Encabezado de la tabla de productos */
+/* Encabezado de la tabla de productos - Grid & Utilities */
 .productos thead {
   background-color: #f100a1; 
   color: #000000; 
 }
 
-/* Filas */
+/* Filas - Gutters visuales*/
 .productos tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
@@ -36,14 +36,14 @@
   background-color: #ffe0f0; 
 }
 
-/* Alineación centrada */
+/* Alineación centrada - Utilities*/
 .table th,
 .table td {
   vertical-align: middle;
   text-align: center;
 }
 
-/* Datos del cliente*/
+/* Datos del cliente- Estilo de tabla cliente - Utilities y colores */
 table.cliente th {
   background-color: #000000;
   color: white;
